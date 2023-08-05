@@ -1,0 +1,48 @@
+* {
+	--dark-purple: rgb(85, 26, 100);
+	--light-purple: rgb(177, 20, 245);
+}
+
+.list {
+	position: fixed;
+	top: 0;
+	min-width: 100%;
+	min-height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--light-purple);
+	color: var(--dark-purple);
+}
+.list button {
+	background-color: rgb(85, 26, 100);
+	color: var(--light-purple);
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	width: 90px;
+	height: 40px;
+	font-size: medium;
+}
+.img {
+	margin-top: 60px;
+	background-image: url('../../../public/shaurma.jpg');
+	background-size: cover;
+	min-width: 100%;
+	min-height: 660px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+}
+.promo-text {
+	text-align: center;
+	font-size: larger;
+	max-width: 70%;
+	max-height: 70%;
+	margin-right: 30%;
+	margin-left: 30%;
+	color: var(--dark-purple);
+	background-color: var(--light-purple);
+	border-radius: 15px;
+	box-shadow: 2px 3px rgba(177, 20, 245, 0.5);
+}
