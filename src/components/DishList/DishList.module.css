@@ -1,0 +1,24 @@
+.dishes {
+	max-width: 50rem;
+	width: 90%;
+	margin: 2rem auto;
+	animation: dishes-appear 1s ease-out forwards;
+}
+
+.dishes ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes dishes-appear {
+	from {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,10 @@
+li {
+	background-color: var(--light-purple);
+	border: 2px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid rgb(58, 6, 75);
+}
