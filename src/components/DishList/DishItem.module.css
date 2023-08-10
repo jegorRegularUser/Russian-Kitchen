@@ -8,3 +8,9 @@ li {
 	padding-bottom: 1rem;
 	border-bottom: 2px solid rgb(58, 6, 75);
 }
+button {
+	background-color: var(--dark-purple);
+	color: var(--light-purple);
+	border-radius: 5px;
+	border: 0px;
+}

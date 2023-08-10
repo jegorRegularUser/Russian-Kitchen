@@ -1,0 +1,14 @@
+.input {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	right: 0;
+}
+.input input {
+	background-color: var(--dark-purple);
+	color: var(--light-purple);
+	border-radius: 5px;
+	border: 0px;
+	width: 30px;
+	margin-left: 20px;
+}

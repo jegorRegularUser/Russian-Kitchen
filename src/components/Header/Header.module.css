@@ -1,8 +1,3 @@
-* {
-	--dark-purple: rgb(85, 26, 100);
-	--light-purple: rgb(177, 20, 245);
-}
-
 .list {
 	position: fixed;
 	top: 0;

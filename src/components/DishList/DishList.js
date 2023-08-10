@@ -3,22 +3,22 @@ import styles from './DishList.module.css'
 const DUMMY_DISHES = [
 	{
 		id: 'm1',
-		name: 'Столичная',
+		name: 'Capital',
 		description:
-			'картофель, куриное филе, маринованный огурец, помидор, огурец, пикантный соус',
+			'potato, chicken fillet, pickled cucumber, tomato, cucumber, spicy sauce',
 		price: 2.99,
 	},
 	{
 		id: 'm2',
-		name: 'Обычная с курицей',
-		description: 'куриное филе, помидор, огурец, фирменный соус',
+		name: 'Regular with chicken',
+		description: 'chicken fillet, tomato, cucumber, signature sauce',
 		price: 1.99,
 	},
 	{
 		id: 'm3',
-		name: 'Восточный кайф',
+		name: 'Oriental buzz',
 		description:
-			'сацебели, кинза, болгарский перец, огурец, помидор, соево-имбирный соус',
+			'satsebeli, cilantro, bell pepper, cucumber, tomato, soy-ginger sauce',
 		price: 0.99,
 	},
 ]
