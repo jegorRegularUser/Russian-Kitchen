@@ -5,10 +5,19 @@
 	right: 0;
 }
 .input input {
-	background-color: var(--dark-purple);
+	background-color: white;
 	color: var(--light-purple);
+	border-color: ar(--dark-purple);
 	border-radius: 5px;
 	border: 0px;
 	width: 30px;
 	margin-left: 20px;
+}
+.input input:hover {
+	background-color: var(--dark-purple);
+	color: var(--light-purple);
+}
+.input input:focus {
+	background-color: var(--dark-purple);
+	color: var(--light-purple);
 }

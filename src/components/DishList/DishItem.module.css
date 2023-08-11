@@ -9,8 +9,17 @@ li {
 	border-bottom: 2px solid rgb(58, 6, 75);
 }
 button {
-	background-color: var(--dark-purple);
+	background-color: white;
 	color: var(--light-purple);
+	border-color: var(--dark-purple);
 	border-radius: 5px;
 	border: 0px;
+}
+button:hover {
+	background-color: var(--dark-purple);
+	color: var(--light-purple);
+}
+li .nameAndPrice {
+	font-size: 110%;
+	font-weight: bold;
 }

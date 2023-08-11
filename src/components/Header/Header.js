@@ -6,7 +6,7 @@ const Header = props => {
 		<>
 			<div className={styles.list}>
 				<h2>Russian Kitchen</h2>
-				<button>Cart</button>
+				<button onClick={props.onCartOpen}>Cart</button>
 			</div>
 			<PromoText />
 		</>
