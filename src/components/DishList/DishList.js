@@ -1,30 +1,12 @@
+import { useContext } from 'react'
+import CartContext from '../../CartStore/CartContext'
 import DishItem from './DishItem'
 import styles from './DishList.module.css'
-const DUMMY_DISHES = [
-	{
-		id: 'm1',
-		name: 'Capital',
-		description:
-			'potato, chicken fillet, pickled cucumber, tomato, cucumber, spicy sauce',
-		price: 2.99,
-	},
-	{
-		id: 'm2',
-		name: 'Regular with chicken',
-		description: 'chicken fillet, tomato, cucumber, signature sauce',
-		price: 1.99,
-	},
-	{
-		id: 'm3',
-		name: 'Oriental buzz',
-		description:
-			'satsebeli, cilantro, bell pepper, cucumber, tomato, soy-ginger sauce',
-		price: 0.99,
-	},
-]
 
 const DishList = props => {
-	const dishListSort = DUMMY_DISHES.map(meal => {
+	const { dishes, setDishes } = useContext(CartContext)
+
+	const dishListSort = dishes?.map(meal => {
 		return (
 			<DishItem
 				key={meal.id}

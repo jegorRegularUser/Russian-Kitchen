@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import CartContextProvider from './CartStore/CartContextProvider.js'
 import Cart from './components/Cart/Cart.js'
 import DishList from './components/DishList/DishList'
 import Header from './components/Header/Header'
@@ -11,11 +12,13 @@ function App() {
 		setCartIsVis(false)
 	}
 	return (
-		<div>
-			{cartIsVis && <Cart onCartClose={cartCloseHandler} />}
-			<Header onCartOpen={cartOpenHandler} />
-			<DishList />
-		</div>
+		<>
+			<CartContextProvider>
+				{cartIsVis && <Cart onCartClose={cartCloseHandler} />}
+				<Header onCartOpen={cartOpenHandler} />
+				<DishList />
+			</CartContextProvider>
+		</>
 	)
 }
 

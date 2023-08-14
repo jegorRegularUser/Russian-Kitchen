@@ -6,8 +6,7 @@
 }
 .input input {
 	background-color: white;
-	color: var(--light-purple);
-	border-color: ar(--dark-purple);
+	color: var(--dark-purple);
 	border-radius: 5px;
 	border: 0px;
 	width: 30px;

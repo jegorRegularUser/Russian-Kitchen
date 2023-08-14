@@ -6,12 +6,11 @@ li {
 	justify-content: space-between;
 	margin: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: 2px solid rgb(58, 6, 75);
+	border-bottom: 2px solid var(--dark-purple);
 }
 button {
 	background-color: white;
-	color: var(--light-purple);
-	border-color: var(--dark-purple);
+	color: var(--dark-purple);
 	border-radius: 5px;
 	border: 0px;
 }
