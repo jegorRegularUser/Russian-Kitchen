@@ -8,21 +8,21 @@ class Dish {
 	}
 }
 const dishCapital = new Dish(
-	'm1',
+	0,
 	'Capital',
 	'potato, chicken fillet, pickled cucumber, tomato, cucumber, spicy sauce',
 	2.99,
 	false
 )
 const dishRegularWithChicken = new Dish(
-	'm2',
+	1,
 	'Regular with chicken',
 	'chicken fillet, tomato, cucumber, signature sauce',
 	1.99,
 	false
 )
 const dishOrientalBuzz = new Dish(
-	'm3',
+	2,
 	'Oriental buzz',
 	'satsebeli, cilantro, bell pepper, cucumber, tomato, soy-ginger sauce',
 	0.99,

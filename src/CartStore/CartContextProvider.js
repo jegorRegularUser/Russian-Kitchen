@@ -6,14 +6,19 @@ import {
 } from '../DishesDescriptionList'
 import CartContext from './CartContext'
 
+const reducer = (state, action) => {
+	const isInCartState = state[state.action].isInCart
+
+	return state.filter(obj => obj.isInCartState === true)
+}
 const CartContextProvider = props => {
-	const [dishes, setDishes] = useState([
+	const [dishes, dispatchDishes] = useState([
 		dishCapital,
 		dishRegularWithChicken,
 		dishOrientalBuzz,
 	])
 	return (
-		<CartContext.Provider value={{ dishes, setDishes }}>
+		<CartContext.Provider value={{ dishes, dispatchDishes }}>
 			{props.children}
 		</CartContext.Provider>
 	)

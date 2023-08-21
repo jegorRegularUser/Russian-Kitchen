@@ -1,12 +1,19 @@
 import { useRef } from 'react'
 import Input from '../../UI/Input'
 import styles from './DishItem.module.css'
-const DishItem = ({ id, name, price, description, isInCart }) => {
+const DishItem = ({ id, name, price, description, isInCart, onSetDishes }) => {
 	const inputData = useRef()
 	const takeInCartHandler = () => {
-		console.log(id)
-		console.log(inputData.current.value)
+		console.log(id, isInCart)
 		isInCart = true
+		console.log(inputData.current.value, isInCart)
+
+		onSetDishes(prevDishes => {
+			return prevDishes.filter(dish => {
+				console.log(dish)
+				return dish.isInCart === true
+			})
+		})
 	}
 	return (
 		<li>
