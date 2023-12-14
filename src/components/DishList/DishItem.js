@@ -4,13 +4,9 @@ import styles from './DishItem.module.css'
 const DishItem = ({ id, name, price, description, isInCart, onSetDishes }) => {
 	const inputData = useRef()
 	const takeInCartHandler = () => {
-		console.log(id, isInCart)
 		isInCart = true
-		console.log(inputData.current.value, isInCart)
-
 		onSetDishes(prevDishes => {
 			return prevDishes.filter(dish => {
-				console.log(dish)
 				return dish.isInCart === true
 			})
 		})

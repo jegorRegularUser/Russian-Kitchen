@@ -17,6 +17,7 @@ const CartContextProvider = props => {
 		dishRegularWithChicken,
 		dishOrientalBuzz,
 	])
+
 	return (
 		<CartContext.Provider value={{ dishes, dispatchDishes }}>
 			{props.children}

@@ -17,14 +17,14 @@ const Cart = props => {
 		<Modal onHideCart={props.onCartClose}>
 			<ul className={styles['cart-items']}>{visDishes}</ul>
 			<div className={styles.total}>
-				<span>Итого</span>
+				<span>Total</span>
 				<span>$10</span>
 			</div>
 			<div className={styles.actions}>
 				<button className={styles['button--alt']} onClick={props.onCartClose}>
-					Закрыть
+					Close
 				</button>
-				<button className={styles.button}>Заказать</button>
+				<button className={styles.button}>Order</button>
 			</div>
 		</Modal>
 	)
